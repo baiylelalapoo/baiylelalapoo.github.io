@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Nabilla Nursaeda - The Future Leader</title>
+    <style>
+        /* RESET & BASE STYLES */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            color: #333333;
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* UKURAN A4 FOR PRINT/PDF */
+        .cv-container {
+            width: 210mm;
+            min-height: 297mm;
+            background: #ffffff;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+
+        /* HEADER / PROFIL UTAMA */
+        .header {
+            grid-column: 1 / -1;
+            border-bottom: 2px solid #1a365d;
+            padding-bottom: 20px;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #1a365d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header .subtitle {
+            font-size: 16px;
+            color: #4a5568;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+            font-size: 13px;
+            color: #4a5568;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* SIDEBAR (KIRI) */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            border-right: 1px solid #e2e8f0;
+            padding-right: 20px;
+        }
+
+        /* CONTENT UTAMA (KANAN) */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        /* SECTION STYLES */
+        .section-title {
+            font-size: 16px;
+            color: #1a365d;
+            text-transform: uppercase;
+            border-bottom: 2px solid #2b6cb0;
+            padding-bottom: 4px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .summary p {
+            font-size: 13.5px;
+            color: #2d3748;
+            text-align: justify;
+        }
+
+        /* ITEM STYLES (ORGANISASI, PENDIDIKAN, PRESTASI) */
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 14px;
+            color: #2d3748;
+        }
+
+        .item-sub {
+            font-size: 13px;
+            color: #2b6cb0;
+            font-weight: 600;
+        }
+
+        .item-date {
+            font-size: 11px;
+            color: #718096;
+            margin-bottom: 5px;
+        }
+
+        .item-desc {
+            font-size: 12.5px;
+            color: #4a5568;
+            padding-left: 15px;
+        }
+
+        .item-desc li {
+            margin-bottom: 3px;
+        }
+
+        /* SKILLS & EXTRA */
+        .skill-list, .tag-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .skill-item {
+            font-size: 12.5px;
+            color: #2d3748;
+        }
+
+        .skill-name {
+            font-weight: 600;
+        }
+
+        .badge-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .badge {
+            background-color: #ebf8ff;
+            color: #2b6cb0;
+            font-size: 11px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        /* UNTUK MODE CETAK (PRINT) */
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            .cv-container {
+                box-shadow: none;
+                width: 100%;
+                min-height: auto;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        
+        <!-- HEADER -->
+        <header class="header">
+            <h1>Nabilla Nursaeda</h1>
+            <div class="subtitle">Seorang siswa kelas 10 yang berumur 15 tahun.Saya lahir pada tanggal 06 November 2010 di Bandung.</div>
+            
+            <div class="contact-info">
+                <div class="contact-item">📍 Bandung, Indonesia</div>
+                <div class="contact-item">✉️ instagram @llnrsd</div>
+            </div>
+        </header>
+
+        <!-- SIDEBAR KIRI -->
+        <aside class="sidebar">
+            
+            <!-- PENDIDIKAN -->
+            <section>
+                <h2 class="section-title">Pendidikan</h2>
+                <div class="item">
+                    <div class="item-title">SD Negeri 258 SUKARELA</div>
+                    <div class="item-date">2017 - 2023</div>
+                    <div class="item-title">SMP Negeri 56 Bandung</div>
+                  <div class="item-date">2023 - 2026</div>
+                  <div class="item-title">SMA Negeri 19 Bandung</div>
+                    <div class="item-date">2026 - 2029</div>
+                </div>
+            </section>
+
+            <!-- KEAHLIAN (HARD & SOFT SKILLS) -->
+            <section>
+                <h2 class="section-title">Keahlian</h2>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <div class="skill-name">Public Speaking</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Bernyanyi)</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Manajemen Acara (Event)</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SOFT SKILLS BADGES -->
+            <section>
+                <h2 class="section-title">Karakter Utama</h2>
+                <div class="badge-list">
+                    <span class="badge">Kepemimpinan</span>
+                    <span class="badge">Kerja Sama Tim</span>
+                    <span class="badge">Manajemen Waktu</span>
+                </div>
+            </section>
+
+            <!-- BAHASA -->
+            <section>
+                <h2 class="section-title">Bahasa</h2>
+                <ul style="font-size: 12.5px; padding-left: 15px; color: #2d3748;">
+                    <li>Bahasa Indonesia (Aktif)</li>
+                    <li>Bahasa Inggris (Pemula - Menengah)</li>
+                    <li>Bahasa Sunda (Menengah)</li>
+                </ul>
+            </section>
+
+        </aside>
+
+        <!-- CONTENT UTAMA KANAN -->
+        <main class="main-content">
+            
+            <!-- PROFIL / RINGKASAN -->
+            <section class="summary">
+                <h2 class="section-title">Ringkasan Profil</h2>
+                <p>
+                    Siswa kelas X yang sedang mengikuti kegiatan belajar serta aktif diluar sekolah
+            </section>
+
+            <!-- PENGALAMAN ORGANISASI & KEPEMIMPINAN -->
+            <section>
+                <h2 class="section-title">Pengalaman Organisasi</h2>
+                
+                <div class="item">
+                    <div class="item-title">OSIS SMP Negeri 56 Bandung</div>
+                    <div class="item-sub">Ketua Seksi Bidang 3 (Pembinaan Kepribadian Unggul,Wawasan Kebangsaan,dan Bela Negara</div>
+                    <div class="item-date">25 Oktober 2024 - 27 Oktober 2025</div>
+                    <ul class="item-desc">
+                        <li>Memimpin tim yang terdiri dari 5 anggota untuk mengelola seluruh program kerja Sekbid 3.</li>
+                        <li>Membantu anggota osis termasuk ketua osis dalam mendisiplinkan calon anggota osis periode selanjutnya.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-title">Pusat Informasi dan Konseling Remaja (PIK-R) Gaparama 56</div>
+                    <div class="item-sub">Bendahara</div>
+                    <div class="item-date">Juli 2024 – Juli 2026</div>
+                    <ul class="item-desc">
+                        <li> Mengkordinasikan keuangan pik- remaja.</li>
+                        <li>Mengatur Biaya pemasukan dan pengeluaran.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- PRESTASI & PENGHARGAAN -->
+            <section>
+                <h2 class="section-title">Prestasi & Penghargaan</h2>
+                
+                <div class="item">
+                    <div class="item-title">Juara 2 ADUJAK PIK-R Lomba Percontohan Segmentasi Berani</div>
+                    <div class="item-sub">Tingkat Provinsi Jawa Barat</div>
+                    <div class="item-date">2025</div>
+                </div>
+
+                <div class="item">
+                    <div class="item-title">Juara 3 Lomba Nyanyi Hardiknas</div>
+                    <div class="item-sub">Diselenggarakan oleh OSIS & Pihak Sekolah</div>
+                    <div class="item-date">2024</div>
+                </div>
+                    <div class="item-title">Juara 2 Lomba Tingkat Pramuka</div>
+                    <div class="item-sub">Tingkat Kecamatan</div>
+                    <div class="item-date">2023</div>
+            </section>
+
+            <!-- KEGIATAN EKSTRAKURIKULER -->
+            <section>
+                <h2 class="section-title">Ekstrakulikuler</h2>
+                
+                <div class="item">
+                    <div class="item-title">Ekstrakulikuler SMP Paduan Suara </div>
+                    <div class="item-sub">Anggota Aktif</div>
+                    <div class="item-date">2023 – 2026</div>
+                    <p style="font-size: 12px; color: #4a5568;">Aktif mengikuti kegiatan Ekskul.</p>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
